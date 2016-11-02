@@ -117,7 +117,9 @@ public:
     
     private_node_handle_.param("autocalibrate", autocalibrate_, true);
     private_node_handle_.param("assume_calibrated", calibrated_, false);
-    private_node_handle_.param("port", port, string("/dev/ttyUSB0"));
+    //private_node_handle_.param("port", port, string("/dev/ttyUSB0"));
+    private_node_handle_.param("port", port, string("/dev/sensors/microstrain_IMU"));
+
     private_node_handle_.param("max_drift_rate", max_drift_rate_, 0.0002);
 
 
